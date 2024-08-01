@@ -53,3 +53,4 @@ src/
 - Custom Hooks: Employs custom hooks for data fetching.
 Modular Components: Breaks down the UI into reusable components.
 
+[Screencastfrom01-08-24185558-ezgif.com-video-to-gif-converter.webm](https://github.com/user-attachments/assets/d7fd67bd-f2a4-4da2-ac32-c3cc1a6216fe)
