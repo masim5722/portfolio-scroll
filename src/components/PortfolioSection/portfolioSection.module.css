@@ -1,0 +1,53 @@
+.scrollContentDown,
+.scrollContentUp {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 24%;
+  will-change: transform;
+  animation-timing-function: linear;
+}
+
+.scrollContentDown {
+  animation: scrollDown 30s linear infinite;
+}
+
+.scrollContentUp {
+  animation: scrollUp 30s linear infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.scrollContentDown:hover,
+.scrollContentUp:hover {
+  animation-play-state: paused;
+}
+
+/* Fix for the zoomed-in images and visibility of the "View Project" button */
+.group:hover .opacity-0 {
+  opacity: 1 !important;
+}
+
+.group .transition-transform {
+  transform: scale(1) !important;
+}
+
+.group:hover .transition-transform {
+  transform: scale(1.1) !important;
+}
